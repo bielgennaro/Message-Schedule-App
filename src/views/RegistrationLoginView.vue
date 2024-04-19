@@ -133,7 +133,7 @@ export default {
               id="terms"
               class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none"
             />
-            <router-link to="/home">
+            <router-link to="/terms">
               <label for="terms" class="ml-2 block text-sm text-gray-700 dark:text-gray-300"
                 >Aceito os termos de uso</label
               >

@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Terms from '../views/ConditionTermsView.vue'
 import Login from '../views/LoginView.vue'
 import Home from '../views/MenuView.vue'
 import NewSchedule from '../views/RegisterMessageView.vue'
@@ -24,6 +25,12 @@ const router = createRouter({
       name: 'home',
 
       component: Home
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+
+      component: Terms
     },
     {
       path: '/users',
