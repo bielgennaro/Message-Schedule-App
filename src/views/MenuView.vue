@@ -16,9 +16,11 @@
               >
             </li>
             <li>
-              <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700"
-                >Usuários</a
-              >
+              <router-link to="/users">
+                <a class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700"
+                  >Usuários</a
+                >
+              </router-link>
             </li>
           </ul>
         </nav>
