@@ -1,35 +1,38 @@
-# MessageScheduler.App
 
-This template should help get you started developing with Vue 3 in Vite.
+# Message Scheduler App
 
-## Recommended IDE Setup
+Este projeto representa o frontend da aplicação Message Scheduler!
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Stack utilizada
 
-## Customize configuration
+**Front-end:** VueJs + TailwindCss
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+**Back-end:** Ruby, Ruby On Rails, Postgresql (https://github.com/bielgennaro/Message-Schedule-Service)
 
-## Project Setup
 
-```sh
-npm install
+
+## Rodando localmente
+
+Clone os projetos
+
+```bash
+  git clone https://github.com/bielgennaro/Message-Schedule-App
 ```
 
-### Compile and Hot-Reload for Development
+Entre no diretório do projeto
 
-```sh
-npm run dev
+```bash
+  cd Message-Schedule-App
 ```
 
-### Compile and Minify for Production
+Instale as dependências
 
-```sh
-npm run build
+```bash
+  npm i
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+Inicie a aplicação
+```bash
+  npm run dev
 ```
+Enjoy :)
