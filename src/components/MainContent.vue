@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-1 p-8 dark:bg-gray-700 text-white">
+  <main class="flex-1 p-8 dark:bg-blue-950 text-white">
     <div>
       <h1 class="text-2xl font-semibold mb-4">Como funciona um agendador de mensagens?</h1>
       <p class="leading-relaxed">

@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="loginUser">
+  <div>
     <div class="mb-4">
       <label for="email" class="block text-sm font-medium text-gray-700 dark:text-black mb-2"
         >Email</label
@@ -46,13 +46,15 @@
         >Não tem uma conta?</router-link
       >
     </div>
-    <button
-      type="submit"
-      class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-    >
-      Entrar
-    </button>
-  </form>
+    <router-link to="/home">
+      <button
+        @click="login"
+        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        Entrar
+      </button>
+    </router-link>
+  </div>
 </template>
 
 <script>
@@ -61,23 +63,22 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      user: {
-        email: '',
-        password: ''
-      },
-      error: ''
+      email: '',
+      password: ''
     }
   },
   methods: {
     async login() {
       try {
         const response = await axios.post('http://127.0.0.1:3000/api/auth', {
-          user: this.user
+          email: this.email,
+          password: this.password
         })
-        console.log(response.data)
+        // Sucesso no login
+        console.log(response.data) // Aqui você pode fazer algo com os dados do usuário logado
       } catch (error) {
-        this.error = 'Login failed'
-        console.error(error)
+        // Erro no login
+        console.error(error.response.data.error)
       }
     }
   }
