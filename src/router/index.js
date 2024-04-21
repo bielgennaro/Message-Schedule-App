@@ -19,7 +19,7 @@ const router = createRouter({
     },
     {
       path: '/registration-login',
-      name: 'registration-login',
+      name: 'registration login',
 
       component: RegistrationLogin
     },
